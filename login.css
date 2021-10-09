@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image : url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container{ 
+    width: 1080px;
+    height: 1024px;
+    margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.logo{
+    position:absolute;
+    left:450px; 
+    top:73px;
+    width: 608px;
+    height: 497px;
+}
+
+input[type=text], input[type=password] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+
+.username{
+    position:absolute;
+    top:575px;
+    left:500px;
+    width:500px;
+    height:61px;
+    background:transparent;
+    font-size:36px;
+    color:white;
+}
+
+.password{
+    position:absolute;
+    top:660px;
+    left:500px;
+    width:500px;
+    height:61px;
+    background:transparent;
+    font-size:36px;
+    color:white;
+}
+
+.submit{
+    position:absolute;
+    width:500px;
+    height:60px;
+    left:500px;
+    top:750px;
+    background-color:white;
+    border-radius: 40px;
+    font-size:36px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: white;
+    text-decoration: bold;
+    background-color:black;
+    cursor: pointer;
+}
+
+.username:focus, .password:focus, .submit:focus{
+    outline: none;
+}
