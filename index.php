@@ -12,8 +12,8 @@
     <div class="container">
         <img class="logo" src="Logo Moment Studio.png"/>
         <form>
-            <input type="text" class="username" placeholder=" Nama Pengguna" name="Nama"><br>
-            <input type="password" class="password" placeholder=" Kata Sandi" name="Password"><br>
+            <input type="text" class="username" placeholder="Nama Pengguna" name="Nama"><br>
+            <input type="password" class="password" placeholder="Kata Sandi" name="Password"><br>
             <input type="checkbox" checked="click" class="checkbox">
             <label for="checkbox" class="checkbox-label">Show Password</label>
             <a href="tambah.php">
