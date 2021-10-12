@@ -32,6 +32,10 @@ input[type=text], input[type=password] {
     border-bottom: 1px solid white;
 }
 
+.username:focus, .password:focus, .submit:focus{
+    outline: none;
+}
+
 
 .username{
     position:absolute;
@@ -55,11 +59,30 @@ input[type=text], input[type=password] {
     color:white;
 }
 
+.checkbox{
+    color:#ffffff;
+    font-size:20px;
+    position:absolute;
+    left:499px;
+    top:750px;
+    cursor:pointer;
+}
+
+
+.checkbox-label{
+    color:#ffffff;
+    font-size:23px;
+    position:absolute;
+    left:525px;
+    top:747px;
+    background:transparent;
+}
+
 .submit{
     position:absolute;
-    width:500px;
+    width:530px;
     height:60px;
-    left:500px;
+    left:490px;
     top:750px;
     background-color:white;
     border-radius: 40px;
@@ -74,6 +97,3 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
-.username:focus, .password:focus, .submit:focus{
-    outline: none;
-}
