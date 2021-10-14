@@ -13,23 +13,71 @@
     <div class="sidebar">
         <div class="logo">
         </div>
-        <button type="button" class="menu"><a href="#"><i class="iconify" data-icon="el:css"></i>Profil</a></button>
-        <button type="button" class="menu"><a href="#"><i class="calendar" data-icon="uil:calendar-alt"></i>Jadwal</a></button>
-        <button type="button" class="currentmenu"><a href="absensi.php">Absensi</a></button>
-        <button type="button" class="menu"><a href="laporan.php">Laporan</a></button>
-        <button type="button" class="menu"><a href="#">Logout</a></button>
+        <button type="button" class="menu"><a href="#"><i class="profil" data-icon="bx:bxs-user"></i>&ensp;Profil</a></button>
+        <button type="button" class="menu"><a href="#"><i class="calendar" data-icon="uil:calendar-alt"></i>&ensp;Jadwal</a></button>
+        <button type="button" class="currentmenu"><a href="absensi.php"><i class="absensi" data-icon="ci:edit"></i>&ensp;Absensi</a></button>
+        <button type="button" class="menu"><a href="laporan.php"><i class="laporan" data-icon="clarity:clipboard-line"></i>&ensp;Laporan</a></button>
+        <button type="button" class="menu"><a href="#"><i class="exit" data-icon="icomoon-free:exit"></i>&ensp;Keluar</a></button>
     </div>
 
     <!-- kontent -->
     <div class="main">
-        <h2>Absensi</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices lorem viverra, pulvinar elit in, feugiat mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis blandit tellus mauris. Aenean ullamcorper tortor tempus justo fringilla, sed maximus purus fermentum. Donec nec neque quis enim elementum facilisis. Morbi tincidunt mauris eu tortor pulvinar commodo. Nunc erat metus, elementum id luctus et, placerat a ligula. Vivamus non efficitur massa. Sed fringilla dictum turpis, et varius nulla elementum id. Integer eget elit dapibus, placerat libero nec, viverra enim. Nullam sed elit in purus dignissim pretium in tempor dolor. Aenean nec suscipit felis.</p>
-        <p>Donec finibus bibendum orci quis facilisis. Proin sit amet ullamcorper augue. Duis pharetra urna sed tellus suscipit suscipit. Nullam in odio dictum, placerat justo eu, interdum velit. Sed nec mollis magna. Aliquam dolor dui, mattis volutpat tincidunt ac, sodales in erat. Praesent porttitor blandit mi, id euismod tortor pretium vitae. Proin at porttitor ex, id venenatis enim. Aenean pretium massa ex, eu elementum ligula molestie sed.</p>
-        <p>Curabitur commodo mi erat, a finibus nunc sollicitudin ut. Phasellus egestas ipsum non libero scelerisque cursus. Aenean nec accumsan lacus. Fusce mattis accumsan odio nec eleifend. Mauris lobortis leo ut volutpat malesuada. Quisque tempor velit ut molestie maximus. Vestibulum ullamcorper auctor lacinia. Aliquam condimentum vehicula efficitur. Cras auctor tellus felis, sit amet vestibulum diam finibus eu. Curabitur ultricies sollicitudin ultricies. Proin urna mauris, porttitor sit amet feugiat non, gravida at metus. Mauris tempus faucibus purus sit amet tempor. Cras condimentum arcu mauris, eu tempor justo laoreet vel. Nam eget magna ipsum.</p>
-        <p>Mauris dapibus ex eu venenatis porta. Cras tempus ante et lectus ullamcorper condimentum. Quisque finibus accumsan placerat. Nam vel purus ac nunc tincidunt condimentum. Mauris nec purus convallis, convallis augue mollis, dictum augue. Etiam nulla ante, faucibus id purus euismod, vehicula tincidunt ante. Phasellus eu est arcu. Proin elementum sed justo id suscipit. Cras vulputate purus velit, consequat bibendum odio ultrices id.</p>
-        <p>Cras laoreet interdum massa, eget pretium nisl bibendum a. Mauris facilisis hendrerit mi sed volutpat. Vestibulum efficitur sed ipsum nec convallis. Praesent porttitor quam eget molestie tincidunt. Duis interdum quam et posuere dignissim. Ut vestibulum tortor viverra nisl semper finibus gravida ut dolor. Nunc ornare augue eros, ut venenatis nulla placerat eu. Nunc a eros tempus, ultrices elit nec, sagittis mi. Donec scelerisque ullamcorper commodo. Curabitur eget laoreet metus.</p>
-        <p>Mauris dapibus ex eu venenatis porta. Cras tempus ante et lectus ullamcorper condimentum. Quisque finibus accumsan placerat. Nam vel purus ac nunc tincidunt condimentum. Mauris nec purus convallis, convallis augue mollis, dictum augue. Etiam nulla ante, faucibus id purus euismod, vehicula tincidunt ante. Phasellus eu est arcu. Proin elementum sed justo id suscipit. Cras vulputate purus velit, consequat bibendum odio ultrices id.</p>
-    </div>
+        <div class="biodata-left">
+            <table align="left" border="0" cellspacing="25" width="370px">
+            <tbody>
+            <tr><td>ID</td><td>:</td><td>001</td></tr>
+            <tr><td>Nama</td><td>:</td><td>Eric</td></tr>
+            </tbody></table>
+        </div>
+        <div class="biodata-right">
+            <table align="right" border="0" cellspacing="25" width="450px">
+            <tbody>
+            <tr><td>Posisi</td><td>:</td><td>Akuntan</td></tr>
+            <tr><td>Departemen</td><td>:</td><td>Keuangan</td></tr>
+            </tbody></table>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class= "form-absensi">
+        <table border="0" cellspacing="25" width="1000px">
+            <tbody>
+            <tr><td><?php
+                $dt = new DateTime();
+                echo $dt->format('d-m-Y');
+                ?>
+            </td></tr>
+            <tr><td> <?php
+                $dt = new DateTime();
+                date_default_timezone_set("Asia/Jakarta");
+                echo $dt->format('h:i');
+                ?>
+            </td><td><button class="masuk">Masuk</button><button class="keluar">Keluar</button></td></tr>
+            <tr><td>Foto</td><td>
+            <form>
+                <input type='file' class="unggah" name="foto" accept='image/*' />
+            </form>    
+            </td><td><div class="bg-unggah"></div></td></tr>
+            <tr><td>Lokasi</td><td><input type="text" class="lokasi" name="lokasi"></td></tr>
+            <tr><td>Catatan</td></tr>
+            </tbody></table>
+            <textarea class="catatan" name="catatan" cols="40" rows="5"></textarea>
+            
+            <br>
+            <br>
+            <button type="submit" class="simpan">Simpan</button>
+        </div>
+
+        <br>
+        <br>
 </body>
 </html>
 
