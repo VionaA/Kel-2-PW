@@ -15,10 +15,20 @@
         <button type="button" class="menu"><a href="#"><i class="calendar" data-icon="uil:calendar-alt"></i>Jadwal</a></button>
         <button type="button" class="menu"><a href="absensi.php">Absensi</a></button>
         <button type="button" class="menu"><a href="laporan.php">Laporan</a></button>
-        <button type="button" class="menu"><a href="#">Logout</a></button>
+        <button type="button" class="menu"><a href="#">Keluar</a></button>
+    </div>
+    <div>
+        <image class="fotoprofil" src="profile.jpg"/>
+    </div>
+    <div>
+        <form>
+            <input class="unggahfoto" name="unggahfoto" type="file">
+        </form>
     </div>
 
-    <div>
+    </div>
+    
+    <div class="container">
         <form>
             <label for="id" class="id-label">ID</label>
             <input type="text" class="id" name="id">
@@ -41,4 +51,5 @@
         </form>
     </div>
 </body>
+
 </html>
