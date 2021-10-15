@@ -97,6 +97,72 @@ body{
     padding: 0px 70px;
 }
 
+.tanggal{
+    margin-top: 80px;
+    margin-left: 40px;
+    font-family: 'Antic Didone';
+    font-size: 30px;
+}
+
+.tanggal-awal{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border: none;
+    width:270px;
+    height: 30px;
+    font-family: 'Antic Didone';
+    left:820px;
+    top:277px;
+    border-radius: 40px;
+}
+
+.tanggal-awal:focus{
+    outline: none;
+}
+
+.tanggal-akhir{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border: none;
+    width:270px;
+    height: 30px;
+    font-family: 'Antic Didone';
+    left:820px;
+    top:277px;
+    border-radius: 40px;
+}
+
+.tanggal-akhir:focus{
+    outline: none;
+}
+
+.cari{
+    margin-left: 50px;
+    font-family: 'Antic Didone';
+    width:130px;
+    height:30px;
+    left:490px;
+    top:835px;
+    border: none;
+    background-color:white;
+    border-radius: 40px;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.search{
+    background: url('https://api.iconify.design/bytesize/search.svg?color=black&width=20&height=20') no-repeat center center / contain;
+    content: url('https://api.iconify.design/bytesize/search.svg?color=black&width=20&height=20');
+}
+
+.cari:active{
+    background-color: white;
+    box-shadow: 0 2px black;
+    transform: translateY(4px);
+}
+
 .biodata-left{
     margin-top: 80px;
     margin-left: 40px;
@@ -112,126 +178,31 @@ body{
     font-size: 30px;
 }
 
-.form-absensi{
-    font-family: 'Antic Didone';
-    font-size: 30px;
-    margin-left: 40px;
-}
-
-.masuk{
-    font-family: 'Antic Didone';
-    font-size: 30px;
-    margin-left: 50px;
-    width:300px;
-    height:46px;;
-    border: none;
-    background-color:white;
-    border-radius: 40px;
-    cursor: pointer;
-}
-
-.masuk:focus{
-    color: white;
-    background-color:black;
-}
-
-.keluar{
-    font-family: 'Antic Didone';
-    font-size: 30px;
-    margin-left: 70px;
-    width:300px;
-    height:46px;;
-    border: none;
-    background-color:white;
-    border-radius: 40px;
-    cursor: pointer;
-}
-
-.keluar:focus{
-    color: white;
-    background-color:black;
-}
-
-.bg-unggah{
-    font-family: 'Antic Didone';
-    font-size: 30px;
-    margin-left: 45px;
-    width:675px;
-    height:46px;;
-    border: none;
-    background-color:white;
-    border-radius: 40px;
-}
-
-.lokasi{
-    font-family: 'Antic Didone';
-    width:660px;
-    height:61px;
-    margin-left: 50px;
-    background:transparent;
-    font-size:32px;
-    color:white;
-}
-
-input[type=text] {
-    background: transparent;
-    border: none;
-    font-size: 25px;
-    padding-left: 10px;
-    border-bottom: 1px solid white;
-    outline: none;
-}
-
-.unggah{
-    margin-left: 20px;
-}
-
-input[type=file] {
+.tabel{
+    margin-left: 65px;
     color: black;
-    float: left;
-    opacity: 1;
-    margin-top: 13px;
+    text-align: center;
 }
 
-textarea{
-    padding-top: 10px;
-    padding-left: 10px;
-    resize: vertical;
-}
-
-.catatan{
+.cetak{
     font-family: 'Antic Didone';
-    width: 910px;
-    height: 175px;
-    margin-left: 30px;
-    border-radius: 15px;
-    font-size: 20px;
-    color: black;
-}
-
-.simpan{
-    font-family: 'Antic Didone';
-    margin-left: 750px;
+    margin-top: 70px;
+    margin-left: 920px;
     width:200px;
-    height:45px;
+    height:40px;
     left:490px;
     top:835px;
     border: none;
     background-color:white;
     border-radius: 40px;
-    font-size:30px;
+    font-size:25px;
     cursor: pointer;
 }
 
-.simpan:active{
+.cetak:active{
     background-color: white;
     box-shadow: 0 2px black;
     transform: translateY(4px);
-}
-
-textarea:focus{
-    border: none;
-    outline: none;
 }
 
 @media screen and (max-height: 450px) {

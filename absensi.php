@@ -24,18 +24,38 @@
     <div class="main">
         <div class="biodata-left">
             <table align="left" border="0" cellspacing="25" width="370px">
-            <tbody>
-            <tr><td>ID</td><td>:</td><td>001</td></tr>
-            <tr><td>Nama</td><td>:</td><td>Eric</td></tr>
-            </tbody></table>
+                <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td>:</td>
+                        <td>001</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Eric</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
         <div class="biodata-right">
             <table align="right" border="0" cellspacing="25" width="450px">
-            <tbody>
-            <tr><td>Posisi</td><td>:</td><td>Akuntan</td></tr>
-            <tr><td>Departemen</td><td>:</td><td>Keuangan</td></tr>
-            </tbody></table>
+                <tbody>
+                    <tr>
+                        <td>Posisi</td>
+                        <td>:</td>
+                        <td>Akuntan</td>
+                    </tr>
+                    <tr>
+                        <td>Departemen</td>
+                        <td>:</td>
+                        <td>Keuangan</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
         <br>
         <br>
         <br>
@@ -48,29 +68,48 @@
         <br>
 
         <div class= "form-absensi">
-        <table border="0" cellspacing="25" width="1000px">
-            <tbody>
-            <tr><td><?php
-                $dt = new DateTime();
-                echo $dt->format('d-m-Y');
-                ?>
-            </td></tr>
-            <tr><td> <?php
-                $dt = new DateTime();
-                date_default_timezone_set("Asia/Jakarta");
-                echo $dt->format('h:i');
-                ?>
-            </td><td><button class="masuk">Masuk</button><button class="keluar">Keluar</button></td></tr>
-            <tr><td>Foto</td><td>
-            <form>
-                <input type='file' class="unggah" name="foto" accept='image/*' />
-            </form>    
-            </td><td><div class="bg-unggah"></div></td></tr>
-            <tr><td>Lokasi</td><td><input type="text" class="lokasi" name="lokasi"></td></tr>
-            <tr><td>Catatan</td></tr>
-            </tbody></table>
-            <textarea class="catatan" name="catatan" cols="40" rows="5"></textarea>
+            <table border="0" cellspacing="25" width="1000px">
+                <tbody>
+                    <tr>
+                        <td>
+                            <?php
+                                $dt = new DateTime();
+                                echo $dt->format('d-m-Y');
+                            ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <?php
+                                $dt = new DateTime();
+                                date_default_timezone_set("Asia/Jakarta");
+                                echo $dt->format('h:i');
+                            ?>
+                        </td>
+                        <td>
+                            <button class="masuk">Masuk</button>
+                            <button class="keluar">Keluar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Foto</td>
+                        <td><div class="bg-unggah">
+                        <form>
+                            <input type='file' class="unggah" name="foto" accept='image/*' />
+                        </form></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lokasi</td>
+                        <td><input type="text" class="lokasi" name="lokasi"></td>
+                    </tr>
+                    <tr>
+                        <td>Catatan</td>
+                    </tr>
+                </tbody>
+            </table>
             
+            <textarea class="catatan" name="catatan" cols="40" rows="5"></textarea>
             <br>
             <br>
             <button type="submit" class="simpan">Simpan</button>
